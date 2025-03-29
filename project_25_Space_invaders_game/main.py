@@ -103,9 +103,9 @@ while running:
         if event.type == pygame.KEYDOWN:
             print(f"{pygame.key.name(event.key)} key was pressed")
             if event.key == pygame.K_LEFT:
-                playerX_change = -0.4
+                playerX_change = -1
             if event.key == pygame.K_RIGHT:
-                playerX_change = 0.4
+                playerX_change = 1
             
             if event.key == pygame.K_SPACE:
                 if bullet_state == "ready":
